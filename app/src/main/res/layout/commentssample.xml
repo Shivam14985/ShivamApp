@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="3dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/profile_user"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/CommensTExte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Name"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/timeNoti"
+            app:layout_constraintStart_toEndOf="@+id/profile"
+            app:layout_constraintTop_toTopOf="@+id/profile"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/timeNoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="top"
+            android:text="Profession"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/profile"
+            app:layout_constraintStart_toEndOf="@+id/profile"
+            app:layout_constraintTop_toBottomOf="@+id/CommensTExte" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

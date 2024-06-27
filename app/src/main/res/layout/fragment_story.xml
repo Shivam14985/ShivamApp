@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Fragments.StoryFragment">
+
+    <RelativeLayout
+
+        android:id="@+id/uploaadPst"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#ebe1f9"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/img_statuscamera"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/baseline_email_24"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginLeft="40dp"
+
+            android:layout_toRightOf="@+id/img_statuscamera"
+            android:text="Upload your Status"
+            android:textColor="@color/black"
+            android:textSize="20sp"></TextView>
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/story_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ClickNotificatio"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="@drawable/edittextbg"
+    android:backgroundTint="#F1EEEE"
+    android:backgroundTintMode="add">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/noti_profile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/profile_user"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/commentNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="20dp"
+        android:maxWidth="250dp"
+        android:text="Priyanshu Kashyap commented on your post "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/noti_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/noti_profile"
+        app:layout_constraintTop_toTopOf="@+id/noti_profile" />
+
+    <TextView
+        android:id="@+id/timeNoti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="just now"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/commentNotification"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/commentNotification"
+        app:layout_constraintTop_toBottomOf="@+id/commentNotification"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

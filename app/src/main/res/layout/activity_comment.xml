@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/toolbarComment"
+        android:layout_height="50dp"
+        android:background="@color/purple_500"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/PostImg"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/toolname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/Description">
+
+        <ImageView
+            android:id="@+id/like"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/heart" />
+
+        <TextView
+            android:id="@+id/likeNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="like"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/Comments"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/speech_bubble" />
+
+        <TextView
+            android:id="@+id/commnetsnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="30"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/Share"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/share" />
+
+        <TextView
+            android:id="@+id/Sharenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="10"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/PostImg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/toolbarComment"
+        app:srcCompat="@drawable/profile_user" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ProfileImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/profile_user"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/PostImg"
+        app:layout_constraintStart_toStartOf="parent"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:background="@drawable/commnets"
+        android:fontFamily="monospace"
+        android:paddingStart="7dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="2dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/ProfileImage"
+        app:layout_constraintStart_toEndOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/ProfileImage"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ProfileImage"
+        app:layout_constraintEnd_toEndOf="@+id/ProfileImage"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ProfileImage" />
+
+    <TextView
+        android:id="@+id/Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/PostImg"
+        app:layout_constraintTop_toBottomOf="@+id/PostImg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/CommensTExt"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="29dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/commentsRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/CommensTExt"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edittextbg"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:gravity="center|start"
+        android:hint="Write A Comment"
+        android:inputType="textMultiLine"
+        android:paddingStart="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Commentsbyn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Commentsbyn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:padding="5dp"
+        android:text="Comment"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/CommensTExt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/CommensTExt"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

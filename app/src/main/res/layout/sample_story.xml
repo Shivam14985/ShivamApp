@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/border"
+    android:padding="2dp"
+    android:id="@+id/storyLayout"
+    >
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/Story"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/border"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:riv_corner_radius="30dip"
+        app:riv_mutate_background="true"
+        tools:ignore="MissingConstraints" />
+
+
+
+<!--    <com.devlomi.circularstatusview.CircularStatusView-->
+<!--        android:id="@+id/circular_status_view"-->
+<!--        android:layout_width="70dp"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        app:portion_color="@color/teal_700"-->
+<!--        app:portion_spacing="4dp"-->
+<!--        app:portion_width="4dp"-->
+<!--        app:portions_count="5"-->
+<!--        tools:layout_editor_absoluteX="8dp"-->
+<!--        tools:layout_editor_absoluteY="5dp" />-->
+
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:id="@+id/profile_image"-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginStart="5dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:background="@drawable/circle"-->
+<!--        android:src="@drawable/profile_user"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/circular_status_view"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/circular_status_view"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/circular_status_view"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.333"-->
+<!--        tools:ignore="MissingConstraints" />-->
+    <RelativeLayout
+        android:id="@+id/image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerInParent="true"
+            android:padding="4dp"
+            android:src="@drawable/profile_user"
+            android:background="@drawable/circle"
+            android:id="@+id/profile_image"/>
+
+        <com.devlomi.circularstatusview.CircularStatusView
+            android:id="@+id/circular_status_view"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerInParent="true"
+            app:portion_color="#FF0000"
+            app:portion_spacing="4dp"
+            app:portion_width="5dp"
+            app:portions_count="8" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/square"
+        android:backgroundTint="#C8FFFFFF"
+        android:maxWidth="200dp"
+        android:minWidth="80dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="4dp"
+        android:text="Shivam Bhardwaj"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Story"
+        app:layout_constraintVertical_bias="0.918" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/square"
+        android:backgroundTint="#C8FFFFFF"
+        android:paddingLeft="3dp"
+        android:paddingRight="4dp"
+        android:id="@+id/timeStory"
+        android:text="Time"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Name"
+        app:layout_constraintEnd_toEndOf="@+id/Story"
+        app:layout_constraintTop_toTopOf="@+id/Name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "307770595584",
+    "project_id": "shivam-s-app-23614",
+    "storage_bucket": "shivam-s-app-23614.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307770595584:android:75a05609e683c570fc7be5",
+        "android_client_info": {
+          "package_name": "com.example.shivamsapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK2MeA5y6PN5Ba0u45iCd8NE9pBK1pxBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

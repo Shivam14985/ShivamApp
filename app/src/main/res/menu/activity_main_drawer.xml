@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/baseline_history_toggle_off_24"
+            android:title="@string/story" />
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/baseline_search_24"
+            android:title="@string/search" />
+
+        <item
+            android:id="@+id/notificationFragment"
+            android:icon="@drawable/baseline_notifications_24"
+            android:title="@string/notification"></item>
+
+        <item
+            android:id="@+id/profileFragment"
+            android:icon="@drawable/baseline_person_pin_24"
+            android:title="@string/profile"></item>
+
+
+    </group>
+</menu>
