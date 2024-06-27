@@ -1,2 +1,11 @@
-![Login Page](https://firebasestorage.googleapis.com/v0/b/day-11-9d736.appspot.com/o/Shivam's%20App%2FScreenshot_2024-06-27-17-23-46-50_6791a891f8ee220ff3f89ca4d0e7e1b6.jpg?alt=media&token=541ee246-dc17-4d95-9e94-e89df2c53f35)
-<img src="images/example.png](https://firebasestorage.googleapis.com/v0/b/day-11-9d736.appspot.com/o/Shivam's%20App%2FScreenshot_2024-06-27-17-23-46-50_6791a891f8ee220ff3f89ca4d0e7e1b6.jpg?alt=media&token=541ee246-dc17-4d95-9e94-e89df2c53f35" width="300" height="450" />
+![Login Page](https://github.com/Shivam14985/ShivamApp/assets/151818491/aa079f38-7167-4c2a-9ca8-3c50f7e1fea5)
+![Sign Up Page](https://github.com/Shivam14985/ShivamApp/assets/151818491/f8515b24-1a1b-48d7-a6ca-2146dcdae348)
+![Home](https://github.com/Shivam14985/ShivamApp/assets/151818491/5ed48f30-025f-4012-a795-34b5401e0a1c)
+![Screenshot_2024-06-27-17-23-37-18_6791a891f8ee220ff3f89ca4d0e7e1b6](https://github.com/Shivam14985/ShivamApp/assets/151818491/b53eaf4c-c7c3-4f0a-902b-5412b9876a4f)
+![Screenshot_2024-06-27-17-10-27-89_6791a891f8ee220ff3f89ca4d0e7e1b6](https://github.com/Shivam14985/ShivamApp/assets/151818491/01a0c5cb-cf30-4346-b11c-23e556ec5f4e)
+![Screenshot_2024-06-27-17-11-02-77_6791a891f8ee220ff3f89ca4d0e7e1b6](https://github.com/Shivam14985/ShivamApp/assets/151818491/54e90e84-4238-4b4a-8686-f4a662763584)
+![Screenshot_2024-06-27-17-11-08-59_6791a891f8ee220ff3f89ca4d0e7e1b6](https://github.com/Shivam14985/ShivamApp/assets/151818491/384f5eea-4aed-49ef-aa90-6927209dcddd)
+![Screenshot_2024-06-27-17-22-14-98_6791a891f8ee220ff3f89ca4d0e7e1b6](https://github.com/Shivam14985/ShivamApp/assets/151818491/771c6ab5-d106-4802-8ad0-5471139fadcb)
+![Screenshot_2024-06-27-17-22-21-45_6791a891f8ee220ff3f89ca4d0e7e1b6](https://github.com/Shivam14985/ShivamApp/assets/151818491/76410852-c465-4f52-bf71-fee739edccaf)
+![Screenshot_2024-06-27-17-22-30-35_6791a891f8ee220ff3f89ca4d0e7e1b6](https://github.com/Shivam14985/ShivamApp/assets/151818491/2ad1a4e2-c424-4aa6-8f80-4f22803a5517)
+![Screenshot_2024-06-27-17-23-23-42_6791a891f8ee220ff3f89ca4d0e7e1b6](https://github.com/Shivam14985/ShivamApp/assets/151818491/76005fa3-06e2-4137-8a36-bc79aa42f96c)
